@@ -1,0 +1,177 @@
+@charset "UTF-8";
+
+//////////////////////////////////
+// 640px 이하의 모바일에서 볼 경우 처리 //
+//////////////////////////////////
+@media screen and (max-width: 640px) {
+  #tc-header{
+    border-top: 5px solid $main-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 1px 0 5px #999;
+    z-index: 200;
+  }
+
+  .tc-nav{
+    display: none;
+  }
+
+  .tc-nav{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+
+    .tc-nav-list{
+      float: left;
+      width: 20%;
+    }
+
+    .tc-nav-link{
+      font-family: 'ChevyB';
+      text-align: center;
+      font-size: 18px;
+      display: block;
+      height: 53px;
+      line-height: 53px;
+      color: $main-color;
+    }
+  }
+
+  .tc-header-inner{
+    height: 50px;
+
+  }
+
+  .tc-cs-info{
+    display: none;
+  }
+
+
+  .tc-nav-m{
+     display: block;
+
+    .tc-nav-link{
+      font-size: 14px;
+    }
+  }
+
+  .tc-nav-m{
+    top: 0;
+  }
+
+  .tc-nav-link-logo{
+    margin-top: 7px;
+  }
+
+  .tc-content-body{
+    position: relative;
+    padding-top: 50px;
+    height: 350px;
+    z-index: 100;
+
+    background: url('../../images/bg_top_spot.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  .tc-content-logo{
+    position: absolute;
+    text-align: center;
+    top: 140px;
+    left: 50%;
+    margin-left: -105px;
+
+    animation: ani-topDown-m 3s ease-out forwards;
+    -webkit-animation: ani-topDown-m 3s;
+    animation-iteration-count: 1;
+  }
+
+  .tc-content-logo-img{
+    width: 220px;
+  }
+
+
+  .tc-content-service{
+    background:url('../../images/bg_top_title_m.png');
+    background-position: 0 0;
+    background-repeat: repeat-x;
+  }
+
+  .tc-content-service-inner{
+    @include setWidthAndCenter(1020px, 320px);
+    padding-bottom: 50px;
+  }
+
+  .tc-content-title{
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .tc-content-title-img{
+    width: 100px;
+  }
+
+
+
+  .tc-content-process{
+    background: #f6f5f6;
+  }
+
+  .tc-content-process-inner{
+    @include setWidthAndCenter(900px, 320px);
+    padding: 20px 10px;
+  }
+
+  .tc-content-process-img{
+    display: none;
+  }
+
+  .tc-content-process-img-m{
+    width: 100%;
+  }
+
+
+  .tc-content-factory-inner{
+    @include setWidthAndCenter(900px, 320px);
+    padding: 30px 10px 0 10px;
+  }
+
+  .tc-content-factory-img{
+    width: 100%;
+  }
+
+
+  .tc-content-factory-bg{
+    margin-top: 30px;
+    height: 215px;
+
+    background: url('../../images/bg_factory.jpg');
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+
+  }
+
+
+  .tc-content-service__01{
+    display: none;
+  }
+
+  .tc-content-service__01_m{
+    @include setWidthAndCenter(900px, 320px);
+    margin-top: 70px;
+    padding: 0 20px;
+  }
+
+  .tc-content-service-img{
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,151 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+$main-color : #33b2e3;
+
+@mixin setWidthAndCenter($max-width, $min-width){
+  max-width: $max-width;
+  min-width: $min-width;
+  margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6,ol,ul{
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+}
+
+ul,ol,li{
+  list-style: none;
+}
+
+@font-face {
+  font-family: 'ChevyM';
+  src: url('../fonts/ChevyM.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ChevyB';
+  src: url('../fonts/ChevyB.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ChevyL';
+  src: url('../fonts/ChevyL.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ChevyUL';
+  src: url('../fonts/ChevyUL.ttf') format('truetype');
+}
+
+.preventDragAndSelect{
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+html,body{
+  overflow-x: hidden;
+}
+
+body{
+  font-family: 'ChevyM','sans-serif';
+  font-size: 16px;
+  text-size-adjust: none;
+
+  @extend .preventDragAndSelect;
+}
+
+
+img{
+  @extend .preventDragAndSelect;
+}
+
+
+a:hover{
+  text-decoration: none;
+}
+
+
+.blind{
+  display: none !important;
+  position: absolute;
+  top: -9999em;
+  left: -9999em;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.center{
+  text-align: center;
+}
+
+hr{
+  display: none;
+}
+
+// TODO mixin을 사용할 경우, e11에서 좌표 이동에 대한 적용이 되지 않는다.
+// animate
+//@mixin animateDown($top){
+//
+//}
+
+
+// keyframes를 모두 분리하여 정의할 것.
+@keyframes ani-topDown
+{
+  from {top: 0; opacity: 0;}
+  to {top: 270px; opacity: 1;}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes ani-topDown
+{
+  from {top: 0; opacity: 0;}
+  to {top: 270px; opacity: 1;}
+}
+
+@keyframes ani-topDown-m
+{
+  from {top: 0; opacity: 0;}
+  to {top: 140px; opacity: 1;}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes ani-topDown-m
+{
+  from {top: 0; opacity: 0;}
+  to {top: 140px; opacity: 1;}
+}
+
+
+@keyframes ani-fadeIn
+{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes ani-fadeIn
+{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+
+@import 'scss/640-below';
+@import 'scss/640-beyond';
+
+
+
