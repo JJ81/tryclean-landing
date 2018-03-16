@@ -4,6 +4,7 @@ $icon-font-path: '../fonts/';
 // endbower
 
 $main-color : #33b2e3;
+$sub-color: #0397d6;;
 
 @mixin setWidthAndCenter($max-width, $min-width){
   max-width: $max-width;
@@ -23,22 +24,26 @@ ul,ol,li{
 
 @font-face {
   font-family: 'ChevyM';
-  src: url('../fonts/ChevyM.ttf') format('truetype');
+  src: url('../fonts/ChevyM.woff') format('woff'),
+       url('../fonts/ChevyM.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'ChevyB';
-  src: url('../fonts/ChevyB.ttf') format('truetype');
+  src: url('../fonts/ChevyB.woff') format('woff'),
+       url('../fonts/ChevyB.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'ChevyL';
-  src: url('../fonts/ChevyL.ttf') format('truetype');
+  src: url('../fonts/ChevyL.woff') format('woff'),
+       url('../fonts/ChevyL.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'ChevyUL';
-  src: url('../fonts/ChevyUL.ttf') format('truetype');
+  src: url('../fonts/ChevyUL.woff') format('woff'),
+       url('../fonts/ChevyUL.ttf') format('truetype');
 }
 
 .preventDragAndSelect{

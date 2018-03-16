@@ -53,6 +53,43 @@
   }
 
 
+  .tc-nav-pc{
+    .txt-nav-01{
+      background: url('../../images/txt_nav_img.png') no-repeat 0 0;
+      overflow: hidden;
+      text-indent: -9999em;
+      display: inline-block;
+      width: 43px;
+      height: 18px;
+    }
+    .txt-nav-02{
+      background: url('../../images/txt_nav_img.png') no-repeat -66px 0;
+      overflow: hidden;
+      text-indent: -9999em;
+      display: inline-block;
+      width: 57px;
+      height: 18px;
+    }
+
+    .txt-nav-03{
+      background: url('../../images/txt_nav_img.png') no-repeat -154px 0;
+      overflow: hidden;
+      text-indent: -9999em;
+      display: inline-block;
+      width: 28px;
+      height: 18px;
+    }
+
+    .txt-nav-04{
+      background: url('../../images/txt_nav_img.png') no-repeat -214px 0;
+      overflow: hidden;
+      text-indent: -9999em;
+      display: inline-block;
+      width: 57px;
+      height: 18px;
+    }
+  }
+
   .tc-content-body{
     position: relative;
     padding-top: 80px;
@@ -182,6 +219,169 @@
 
   }
 
+  // 창업문의
+
+  .tc-content-venture{
+    background: #f4f9fa url('../../images/bg_top_title.png');
+    background-position: 0 0;
+    background-repeat: repeat-x;
+  }
+
+
+  .tc-content-venture-inner{
+    @include setWidthAndCenter(900px, 320px);
+    padding-bottom: 40px;
+  }
+
+  .tc-content-venture-phrase{
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+
+  .txt-venture-info01-img{
+    width: 100%;
+  }
+  .txt-venture-info02-img{
+    width: 100%;
+  }
+  .txt-venture-info03-img{
+    width: 100%;
+  }
+
+  .tc-content-venture-apply{
+    padding-top: 100px;
+    height: 340px;
+
+    background: url('../../images/bg_washing_machine.jpg');
+    background-repeat: repeat-x;
+    background-position: center 600px;
+    background-attachment: fixed;
+  }
+
+
+  // 빨래통 소식
+  .tc-content-news{
+    background: url('../../images/bg_top_title.png');
+    background-position: 0 0;
+    background-repeat: repeat-x;
+  }
+
+  .tc-content-blog{
+    padding-top: 200px;
+    padding-bottom: 160px;
+  }
+
+  .tc-content-news-inner{
+    @include setWidthAndCenter(1280px, 320px);
+    padding-bottom: 70px;
+    background: url('../../images/bg_bubble.jpg') no-repeat right bottom;
+  }
+
+
+  .blog-wrp{
+    text-align: center;
+  }
+
+  .blog-title{
+    font-size: 18px;
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    color: #211712;
+  }
+
+  .blog-date{
+    font-size: 15px;
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+    color: #2d231e;
+  }
+
+
+  .blog-btn{
+    padding-top: 160px;
+  }
+
+
+  // 회사소개
+  .tc-content-company{
+    background: url('../../images/bg_top_title.png');
+    background-position: 0 0;
+    background-repeat: repeat-x;
+  }
+
+  .tc-content-company-inner{
+    @include setWidthAndCenter(1080px, 320px);
+  }
+
+  .tc-content-company-info{
+    .col-sm-4{
+      margin-bottom: 30px;
+    }
+
+  }
+
+  .tc-content-sub-title{
+    margin-top: 130px;
+    margin-bottom: 70px;
+    font-size: 30px;
+    color: #333333;
+    font-family: 'ChevyB';
+    text-align: center;
+    background: url('../../images/bl_split_vertical.gif') no-repeat center bottom;
+    padding-bottom: 25px;
+  }
+
+
+  #tryclean_map{
+    width: 100%;
+    height: 400px;
+  }
+
+  .affiliate-list{
+    @include setWidthAndCenter(1360px, 320px);
+    padding-bottom: 100px;
+
+    .col-sm-4, .col-md-3, .col-lg-2{
+      text-align: center;
+      margin-bottom: 0;
+    }
+  }
+
+
+
+  // footer
+  #tc-footer{
+    background: $sub-color;
+  }
+  .tc_footer_inner{
+    @include setWidthAndCenter(1120px, 320px);
+    padding: 30px 20px;
+    font-size: 14px;
+    color: #ddedf7;
+  }
+
+  .tc-footer-info-phrase{
+    margin-top: 20px;
+  }
+
+  .copyright{
+    margin-top: 50px;
+  }
+  
+  .tc-footer-left-info{
+    text-align: right;
+  }
+
+  .btn-cs-call,.btn-cs-call:hover{
+    font-size: 26px;
+    color: #ddedf7;
+  }
+  
+  .tc-footer-sns-box{
+    margin-bottom: 25px;
+  }
 
 
 }
