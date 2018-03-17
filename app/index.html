@@ -33,14 +33,14 @@
 				<ul class="tc-nav clearfix tc-nav-pc">
 					<li class="tc-nav-list">
 						<h2>
-							<a href="#" class="tc-nav-link">
+							<a href="#intro" class="tc-nav-link">
 								<span class="txt-nav-01">빨래통</span>
 							</a>
 						</h2>
 					</li>
 					<li class="tc-nav-list">
 						<h2>
-							<a href="#" class="tc-nav-link">
+							<a href="#venture" class="tc-nav-link">
 								<span class="txt-nav-02">창업문의</span>
 							</a>
 						</h2>
@@ -52,14 +52,14 @@
 					</li>
 					<li class="tc-nav-list">
 						<h2>
-							<a href="#" class="tc-nav-link">
+							<a href="#news" class="tc-nav-link">
 								<span class="txt-nav-03">빨래통소식</span>
 							</a>
 						</h2>
 					</li>
 					<li class="tc-nav-list">
 						<h2>
-							<a href="#" class="tc-nav-link">
+							<a href="#introduce" class="tc-nav-link">
 								<span class="txt-nav-04">회사소개</span>
 							</a>
 						</h2>
@@ -68,31 +68,31 @@
 				<ul class="tc-nav tc-nav-m clearfix">
 					<li class="tc-nav-list">
 						<h2>
-							<a href="#" class="tc-nav-link">
+							<a href="#intro" class="tc-nav-link">
 								빨래통
 							</a>
 						</h2>
 					</li>
 					<li class="tc-nav-list">
 						<h2>
-							<a href="#" class="tc-nav-link">
+							<a href="#venture" class="tc-nav-link">
 								창업문의
 							</a>
 						</h2>
 					</li>
 					<li class="tc-nav-list">
-						<a href="#" class="tc-nav-link tc-nav-link-logo">
+						<a href="#intro" class="tc-nav-link tc-nav-link-logo">
 							<h1><img src="./images/img-header-logo-m.gif" alt="트라이크린" width="35" /></h1>
 						</a>
 					</li>
 					<li class="tc-nav-list">
 						<h2>
-							<a href="#" class="tc-nav-link">소식</a>
+							<a href="#news" class="tc-nav-link">소식</a>
 						</h2>
 					</li>
 					<li class="tc-nav-list">
 						<h2>
-							<a href="#" class="tc-nav-link">회사소개</a>
+							<a href="#introduce" class="tc-nav-link">회사소개</a>
 						</h2>
 					</li>
 				</ul>
@@ -105,7 +105,7 @@
 
 		<hr />
 
-		<div class="tc-content-body">
+		<div class="tc-content-body" id="intro">
 			<div class="tc-content-body-inner">
 				<h3 class="tc-content-logo">
 					<img src="./images/img_tryclean_spot.png" alt="24시 무인세탁소, 빨래통" class="tc-content-logo-img" />
@@ -157,10 +157,10 @@
 
 		<hr />
 
-		<div class="tc-content-venture">
+		<div class="tc-content-venture" id="venture">
 			<div class="tc-content-venture-inner">
 				<h4 class="tc-content-title">
-					<img src="./images/txt_venture.png" alt="창업문의" />
+					<img src="./images/txt_venture.png" alt="창업문의" class="tc-content-title-img" />
 				</h4>
 				<div class="tc-content-venture-info">
 					<p class="tc-content-venture-phrase">
@@ -184,10 +184,10 @@
 
 		<hr />
 
-		<div class="tc-content-news">
+		<div class="tc-content-news" id="news">
 			<div class="tc-content-news-inner">
 				<h4 class="tc-content-title">
-					<img src="./images/txt_blog.png" alt="빨래통 소식" />
+					<img src="./images/txt_blog.png" alt="빨래통 소식" class="tc-content-title-img" />
 				</h4>
 				<div class="tc-content-blog">
 					<div class="row">
@@ -236,10 +236,10 @@
 
 		<hr />
 
-		<div class="tc-content-company">
+		<div class="tc-content-company" id="introduce">
 			<div class="tc-content-company-inner">
 				<h4 class="tc-content-title">
-					<img src="./images/txt_company.png" alt="회사소개" />
+					<img src="./images/txt_company.png" alt="회사소개" class="tc-content-title-img" />
 				</h4>
 				<h5 class="tc-content-sub-title">
 					(주)트라이크린은 왜 믿을 만한가?
@@ -269,54 +269,50 @@
 					오시는 길
 				</h5>
 			</div>
-			<!-- TODO 구글지도는 API가 필요하며, 구글 지도도 디자인 커스터마이징이 가능한 라이브러리가 있을 것이다. -->
+
+			<hr />
+
 			<div class="tc-content-map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.5471363107317!2d126.84042593721597!3d37.49501180009143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b62758d1c883f%3A0x25a89297eb400323!2z7ISc7Jq47Yq567OE7IucIOq1rOuhnOq1rCDqsr3snbjroZwgMTky!5e0!3m2!1sko!2skr!4v1521167769249"
-						id="tryclean_map"
-						frameborder="0"
-						style="border:0" allowfullscreen></iframe>
+				<div id="tryclean_map"></div>
 			</div>
+
 			<h5 class="tc-content-sub-title">
 				제휴기업
 			</h5>
 			<div class="affiliate-list">
 				<div class="row">
 					<div class="col-sm-4 col-md-3 col-lg-2">
-						<a href="#" target="_blank"><img src="./images/affiliate/tmp_affiliate.jpg" alt="" /></a>
+						<a href="https://www.woogos.com/" target="_blank"><img src="./images/affiliate/aff_woogos.jpg" alt="" /></a>
 					</div>
 					<div class="col-sm-4 col-md-3 col-lg-2">
-						<a href="#" target="_blank"><img src="./images/affiliate/tmp_affiliate.jpg" alt="" /></a>
+						<a href="http://www.coupang.com/" target="_blank"><img src="./images/affiliate/aff_coupang.jpg" alt="" /></a>
 					</div>
 					<div class="col-sm-4 col-md-3 col-lg-2">
-						<a href="#" target="_blank"><img src="./images/affiliate/tmp_affiliate.jpg" alt="" /></a>
+						<a href="http://www.stanfordseoul.com/seoul/" target="_blank"><img src="./images/affiliate/aff_stan_hotel.jpg" alt="" /></a>
 					</div>
 					<div class="col-sm-4 col-md-3 col-lg-2">
-						<a href="#" target="_blank"><img src="./images/affiliate/tmp_affiliate.jpg" alt="" /></a>
+						<a href="http://www.prima.co.kr/" target="_blank"><img src="./images/affiliate/aff_prima_hotel.jpg" alt="" /></a>
 					</div>
 					<div class="col-sm-4 col-md-3 col-lg-2">
-						<a href="#" target="_blank"><img src="./images/affiliate/tmp_affiliate.jpg" alt="" /></a>
+						<a href="https://www.dabangapp.com/" target="_blank"><img src="./images/affiliate/aff_dabang.jpg" alt="" /></a>
 					</div>
 					<div class="col-sm-4 col-md-3 col-lg-2">
-						<a href="#" target="_blank"><img src="./images/affiliate/tmp_affiliate.jpg" alt="" /></a>
+						<a href="http://www.dalkomm.com/" target="_blank"><img src="./images/affiliate/aff_dalkom.jpg" alt="" /></a>
 					</div>
 					<div class="col-sm-4 col-md-3 col-lg-2">
-						<a href="#" target="_blank"><img src="./images/affiliate/tmp_affiliate.jpg" alt="" /></a>
+						<a href="http://www.aladinbox.net/" target="_blank"><img src="./images/affiliate/aff_aladin.jpg" alt="" /></a>
 					</div>
 					<div class="col-sm-4 col-md-3 col-lg-2">
-						<a href="#" target="_blank"><img src="./images/affiliate/tmp_affiliate.jpg" alt="" /></a>
+						<a href="#none" target="_blank"><img src="./images/affiliate/aff_superbox.jpg" alt="" /></a>
 					</div>
 					<div class="col-sm-4 col-md-3 col-lg-2">
-						<a href="#" target="_blank"><img src="./images/affiliate/tmp_affiliate.jpg" alt="" /></a>
+						<a href="http://www.cinderela.co.kr/" target="_blank"><img src="./images/affiliate/aff_cinderela.jpg" alt="" /></a>
 					</div>
 					<div class="col-sm-4 col-md-3 col-lg-2">
-						<a href="#" target="_blank"><img src="./images/affiliate/tmp_affiliate.jpg" alt="" /></a>
+						<a href="http://jcorporationtech.com/" target="_blank"><img src="./images/affiliate/aff_jtech_new.jpg" alt="" /></a>
 					</div>
-					<div class="col-sm-4 col-md-3 col-lg-2">
-						<a href="#" target="_blank"><img src="./images/affiliate/tmp_affiliate.jpg" alt="" /></a>
-					</div>
-					<div class="col-sm-4 col-md-3 col-lg-2">
-						<a href="#" target="_blank"><img src="./images/affiliate/tmp_affiliate.jpg" alt="" /></a>
-					</div>
+					<!--<div class="col-sm-4 col-md-3 col-lg-2"></div>-->
+					<!--<div class="col-sm-4 col-md-3 col-lg-2"></div>-->
 				</div>
 			</div>
 		</div>
@@ -376,7 +372,8 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-    
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVdi2_YrPzGdLUhafqWrOoWs6xAVWL82M"></script>
     <!-- build:js scripts/plugins.js -->
     <!--<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>-->
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>

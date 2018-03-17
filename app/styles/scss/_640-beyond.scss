@@ -17,6 +17,7 @@
     position: relative;
 
     height: 75px;
+    // overflow-y: hidden;
 
 
     .tc-cs-info{
@@ -43,7 +44,7 @@
       font-size: 18px;
       display: block;
       height: 53px;
-      line-height: 53px;
+      line-height: 60px;
       color: $main-color;
     }
   }
@@ -166,6 +167,7 @@
     @include setWidthAndCenter(900px, 320px);
     margin-top: 180px;
     padding: 0 20px;
+    text-align: center;
   }
 
   .tc-content-service__01_m{
@@ -174,6 +176,7 @@
 
   .tc-content-service-img{
     width: 100%;
+    max-width: 800px;
   }
 
 
@@ -183,10 +186,7 @@
 
   .tc-content-process-inner{
     @include setWidthAndCenter(900px, 320px);
-    padding: 0 20px;
-    //height: 370px;
-    //line-height: 370px;
-    padding: 70px 0;
+    padding: 70px 20px;
   }
 
   .tc-content-process-img{
@@ -205,11 +205,12 @@
 
   .tc-content-factory-img{
     width: 100%;
+    max-width: 650px;
   }
 
   .tc-content-factory-bg{
     margin-top: 30px;
-    height: 430px;
+    height: 350px;
 
     background: url('../../images/bg_factory.jpg');
     background-repeat: repeat-x;
@@ -231,21 +232,29 @@
   .tc-content-venture-inner{
     @include setWidthAndCenter(900px, 320px);
     padding-bottom: 40px;
+    
+    .col-sm-6{
+      text-align: center;
+    }
   }
 
   .tc-content-venture-phrase{
     padding-top: 200px;
     padding-bottom: 100px;
+    text-align: center;
   }
 
   .txt-venture-info01-img{
     width: 100%;
+    max-width: 650px;
   }
   .txt-venture-info02-img{
     width: 100%;
+    max-width: 400px;
   }
   .txt-venture-info03-img{
     width: 100%;
+    max-width: 400px;
   }
 
   .tc-content-venture-apply{
@@ -254,7 +263,7 @@
 
     background: url('../../images/bg_washing_machine.jpg');
     background-repeat: repeat-x;
-    background-position: center 600px;
+    background-position: center 640px;
     background-attachment: fixed;
   }
 
@@ -342,10 +351,17 @@
   .affiliate-list{
     @include setWidthAndCenter(1360px, 320px);
     padding-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 20px;
 
     .col-sm-4, .col-md-3, .col-lg-2{
       text-align: center;
-      margin-bottom: 0;
+      margin-bottom: 30px;
+    }
+
+    img{
+      width: 100%;
+      max-width: 260px;
     }
   }
 
