@@ -2,9 +2,7 @@
   "name": "tryclean-landing",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "~3.3.5",
-    "modernizr": "~2.8.1",
-    "vue": "^2.5.16"
+    "bootstrap-sass": "~3.3.5"
   },
   "overrides": {
     "bootstrap-sass": {

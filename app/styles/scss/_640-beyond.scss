@@ -197,6 +197,10 @@
     display: none;
   }
 
+  .tc-content-factory{
+    position: relative;
+  }
+
 
   .tc-content-factory-inner{
     @include setWidthAndCenter(900px, 320px);
@@ -210,13 +214,14 @@
 
   .tc-content-factory-bg{
     margin-top: 30px;
+    margin-bottom: 30px;
     height: 350px;
 
     background: url('../../images/bg_factory.jpg');
     background-repeat: repeat-x;
     background-size: cover;
     background-position: center;
-    margin-bottom: 115px;
+
 
   }
 
@@ -261,6 +266,7 @@
     padding-top: 100px;
     height: 340px;
 
+
     background: url('../../images/bg_washing_machine.jpg');
     background-repeat: repeat-x;
     background-position: center 640px;
@@ -277,7 +283,7 @@
 
   .tc-content-blog{
     padding-top: 200px;
-    padding-bottom: 160px;
+    // padding-bottom: 160px;
   }
 
   .tc-content-news-inner{
@@ -399,6 +405,20 @@
     margin-bottom: 25px;
   }
 
+
+  .arrow-wrapper{
+    height: 70px;
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  .arrow-wrapper-top{
+    height: 70px;
+    margin-bottom: 40px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 
 }
 

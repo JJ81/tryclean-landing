@@ -45,6 +45,7 @@
 			,map: map
 			,title: this.title
 			,addr : this.addr
+			,icon : '../images/marker.png'
 		});
 	};
 
@@ -81,15 +82,17 @@
 		});
 
 		marker.makeHTML = function () {
-			return '<div><strong style="font-size: 15px;color: #00aeef;display: block;">'+this.title+'</strong><br /><span>'+this.addr+'</span></div>';
+			return '<div style="overflow: hidden;"><strong style="font-size: 15px;color: #00aeef;display: block;">'
+				+ this.title +
+				'</strong><br /><span style="display: inline-block">'+this.addr+'</span></div>';
 		};
 	};
 
 	var try_clean = {
 		lat: 37.495012,
 		lng: 126.842637,
-		title: '(주) 트라인크린',
-		addr : '서울특별시 구로구 경인로 192 5층 502호 (오류동 삼익쇼핑)'
+		title: '(주) 트라이크린',
+		addr : '서울특별시 구로구 경인로 192, 502호 (오류동 삼익쇼핑)'
 	};
 
 	var marker = new MakeMap({
@@ -142,11 +145,10 @@
 		}
 	});
 
-
-
+	
 	function moveToHashPos(hash, duration, callback){
 		body.stop().animate({
-			scrollTop: $(hash).offset().top
+			scrollTop: $(hash).offset().top - 80
 		}, duration, callback);
 	}
 
@@ -158,20 +160,6 @@
 		}
 	});
 	
-	
-	// var
-	// 	body = $('html, body'),
-	// 	menu = $('.tc-nav-link');
-	//
-	// menu.bind('click', function () {
-	// 	var _hash = $(this);
-	// 	console.log(_hash);
-	//
-	// 	body.stop().animate({
-	// 		scrollTop: $('#introduce').offset().top
-	// 	}, 300);
-	//
-	// });
 	
 	
 }(jQuery, window));
