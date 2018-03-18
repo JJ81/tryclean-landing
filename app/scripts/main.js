@@ -127,6 +127,7 @@
 
 
 	menu.on('click', function(event) {
+		// event.preventDefault();
 		if (this.hash !== '') {
 			if(!$(this).attr('data-location')){
 				event.preventDefault();
